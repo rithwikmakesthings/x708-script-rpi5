@@ -1,11 +1,11 @@
 #!/bin/bash
 
-SHUTDOWN=5
+SHUTDOWN=404
 REBOOTPULSEMINIMUM=200
 REBOOTPULSEMAXIMUM=600
 echo "$SHUTDOWN" > /sys/class/gpio/export
 echo "in" > /sys/class/gpio/gpio$SHUTDOWN/direction
-BOOT=12
+BOOT=411
 echo "$BOOT" > /sys/class/gpio/export
 echo "out" > /sys/class/gpio/gpio$BOOT/direction
 echo "1" > /sys/class/gpio/gpio$BOOT/value
