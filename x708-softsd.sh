@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BUTTON=13
+BUTTON=412
 
 echo "$BUTTON" > /sys/class/gpio/export;
 echo "out" > /sys/class/gpio/gpio$BUTTON/direction
